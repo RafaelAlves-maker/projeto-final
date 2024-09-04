@@ -4,6 +4,7 @@ import funcoes
 
 
 while True:
+        print("=== Gerenciador de Tarefas ===")
         print("\nMenu:")
         print("1. Mostrar tarefas")
         print("2. Adicionar tarefa")
