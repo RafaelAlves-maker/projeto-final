@@ -1,9 +1,8 @@
 import os
 
-# Lista que armazenará as tarefas
 tarefas = []
 
-def mostrar_tarefas(): #primeira função
+def mostrar_tarefas(): 
     """Exibe a lista de tarefas."""
     if len(tarefas) == 0: 
         print("Nenhuma tarefa na lista.")
@@ -12,13 +11,13 @@ def mostrar_tarefas(): #primeira função
         for i, tarefa in enumerate(tarefas, 1): 
             print(f"{i}. {tarefa}")
 
-def adicionar_tarefa(): #segunda função
+def adicionar_tarefa(): 
     """Adiciona uma nova tarefa à lista."""
     tarefa = input("Digite a nova tarefa: ")
     tarefas.append(tarefa)
     print(f"Tarefa '{tarefa}' adicionada com sucesso!")
 
-def remover_tarefa(): #terceira função
+def remover_tarefa():
     """Remove uma tarefa da lista."""
     mostrar_tarefas()
     if len(tarefas) > 0:
